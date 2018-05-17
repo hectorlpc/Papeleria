@@ -39,6 +39,38 @@
                   <a class="dropdown-item" href="Categoria.html">Articulos de Contables</a>
                 </div>
               </li>
+                 <li class="nav-item dropdown show">
+                <a class="nav-link dropdown-toggle" href="#" role=""id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administrador</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="{{url('/Proveedor')}}">Proveedor</a>
+                  <a class="dropdown-item" href="{{url('/Rol')}}">Rol</a>
+                  <a class="dropdown-item" href="{{url('/Edificio')}}">Edificio</a>
+                  <a class="dropdown-item" href="{{url('/Salon')}}">Salón</a>
+                  <a class="dropdown-item" href="{{url('/Privilegio')}}">Privilegio</a>
+                </div>
+              </li>
+                 <li class="nav-item dropdown show">
+                <a class="nav-link dropdown-toggle" href="#" role=""id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vendedor</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="{{url('/Marca')}}">Marca</a>
+                  <a class="dropdown-item" href="{{url('/Categoria')}}">Categoría</a>
+                  <a class="dropdown-item" href="{{url('/Producto')}}">Producto</a>
+                  <a class="dropdown-item" href="{{url('/Tipo')}}">Tipo de producto</a>
+                  <a class="dropdown-item" href="{{url('/Premio')}}">Premio</a>
+                  <a class="dropdown-item" href="{{url('/Metodo')}}">Metódo de pago</a>
+                  <a class="dropdown-item" href="{{url('/')}}">Detalle de venta</a>    
+                    
+                  
+                </div>
+              </li>
+                 <li class="nav-item dropdown show">
+                <a class="nav-link dropdown-toggle" href="#" role=""id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Repartidor</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="{{url('/')}}">Detalle de Entrega</a>
+                  <a class="dropdown-item" href="{{url('/')}}">Articulos de Diseño</a>
+                  
+                </div>
+              </li>
               <li class="nav-item">
                 <a class="nav-link disabled" href="#">Contacto</a>
               </li>
