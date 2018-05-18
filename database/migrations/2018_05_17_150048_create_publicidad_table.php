@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateEdificioTable extends Migration
+class CreatePublicidadTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,13 @@ class CreateEdificioTable extends Migration
      */
     public function up()
     {
-        Schema::create('edificio', function (Blueprint $table) {
+        Schema::create('publicidad', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('Nombre_edificio');
-            $table->integer('No_plantas')->unsigned();
+            $table->string('Desc_Publicidad');
+            $table->string('img');
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      *
@@ -28,6 +27,6 @@ class CreateEdificioTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_edificio');
+        Schema::dropIfExists('publicidad');
     }
 }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\categoria;
+use App\publicidad;
 
 class HomeController extends Controller
 {
@@ -28,8 +29,9 @@ class HomeController extends Controller
     }
   public function principal()
   {
+    $publicidades= publicidad::all();
     $categorias= categoria::all();
-    return view('welcome',compact('categorias'));
+    return view('welcome',['categorias'=>$categorias,'publicidades'=>$publicidades]);
 
   }
 }

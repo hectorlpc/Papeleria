@@ -74,3 +74,26 @@ Route::get('/Privilegio/{id}/edit', 'privilegioController@edit');
 Route::post('/Privilegio/{id}', 'privilegioController@update');
 Route::delete('/Privilegio/{id}', 'privilegioController@destroy');
 
+//Tipo
+Route::get('/Tipo', 'tipoController@index')->name('Tipo');
+Route::get('/Tipo/create', 'tipoController@create');
+Route::post('/Tipo/store', 'tipoController@store');
+Route::get('/Tipo/{id}/edit', 'tipoController@edit');
+Route::post('/Tipo/{id}', 'tipoController@update');
+Route::delete('/Tipo/{id}', 'tipoController@destroy');
+
+//Edificio
+Route::get('/Edificio', 'edificioController@index')->name('Edificio');
+Route::get('/Edificio/create', 'edificioController@create');
+Route::post('/Edificio/store', 'edificioController@store');
+Route::get('/Edificio/{id}/edit', 'edificioController@edit');
+Route::post('/Edificio/{id}', 'edificioController@update');
+Route::delete('/Edificio/{id}', 'edificioController@destroy');
+
+//Publicidad
+Route::get('/Publicidad', 'publicidadController@index')->name('Publicidad');
+Route::get('/Publicidad/create', 'publicidadController@create');
+Route::post('/Publicidad/store', 'publicidadController@store');
+Route::get('/Publicidad/{id}/edit', 'publicidadController@edit');
+Route::post('/Publicidad/{id}', 'publicidadController@update');
+Route::delete('/Publicidad/{id}', 'publicidadController@destroy');
